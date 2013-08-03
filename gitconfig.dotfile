@@ -1,0 +1,7 @@
+[user]
+	name = Noriki Nakamura
+	email = bynn_chapu@tencho-lab.net
+[core]
+	editor = vim
+[color]
+	ui = true
