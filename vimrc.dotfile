@@ -1,10 +1,12 @@
 " Basic Settings
-set autoindent
-set smartindent
-set showmatch
+syntax on
 set number
-set tabstop=4
- 
+set autoindent
+set showmatch
 set hlsearch
+set wrap
+set ruler
+set showcmd
+
 " Key Settings
 nmap <Esc><Esc> :noh<CR><Esc>
