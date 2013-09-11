@@ -1,3 +1,4 @@
+" Basic Settings
 set autoindent
 set smartindent
 set showmatch
@@ -5,4 +6,5 @@ set number
 set tabstop=4
  
 set hlsearch
+" Key Settings
 nmap <Esc><Esc> :noh<CR><Esc>
