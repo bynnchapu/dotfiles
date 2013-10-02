@@ -1,0 +1,15 @@
+" Basic Settings
+syntax on
+set number
+set autoindent
+set showmatch
+set hlsearch
+set wrap
+set ruler
+set showcmd
+
+" Statusline Setting
+set laststatus=2
+
+" Key Settings
+nmap <Esc><Esc> :noh<CR><Esc>
