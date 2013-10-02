@@ -14,6 +14,9 @@ set laststatus=2
 " Key Settings
 nmap <Esc><Esc> :noh<CR><Esc>
 
+" Color Settings
+hi Comment ctermfg=2
+
 " Copy Select Text to ClipBord
 set clipboard+=autoselect
 set clipboard+=unnamed
