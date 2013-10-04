@@ -14,6 +14,7 @@ set laststatus=2
 
 " Key Settings
 nmap <Esc><Esc> :noh<CR><Esc>
+vmap <C-c> "+y
 
 " Color Settings
 hi Comment ctermfg=2
