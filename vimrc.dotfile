@@ -18,8 +18,8 @@ nmap <Esc><Esc> :noh<CR><Esc>
 hi Comment ctermfg=2
 
 " Copy Select Text to ClipBord
-set clipboard+=autoselect
-set clipboard+=unnamed
+" set clipboard+=autoselect
+" set clipboard+=unnamed
 
 " Settings for NeoBundle
 set nocompatible               " Be iMproved
