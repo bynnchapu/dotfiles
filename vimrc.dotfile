@@ -34,8 +34,7 @@ endif
 call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Plugins write here
-NeoBundle 'YankRing.vim'
-NeoBundle 'mbbill/undotree'
+NeoBundle 'tpope/vim-fugitive'
 
 filetype plugin indent on     " Required!
 
