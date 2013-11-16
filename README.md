@@ -1,4 +1,4 @@
-Dotfiles of Noriki (a.k.a. Tencho)
+Dotfiles for Noriki (a.k.a. Tencho)
 ====
 
 ```
