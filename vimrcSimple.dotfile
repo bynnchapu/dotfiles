@@ -9,6 +9,10 @@ set ruler
 set showcmd
 set mouse=a
 
+" Show Tabs
+set listchars=tab:>-,extends:<,trail:_
+set list
+
 " Statusline Setting
 set laststatus=2
 

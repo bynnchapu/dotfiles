@@ -9,6 +9,10 @@ set ruler
 set showcmd
 set mouse=a
 
+" Show Tabs
+set listchars=tab:>-,extends:<,trail:_
+set list
+
 " Statusline Setting
 set laststatus=2
 
@@ -20,8 +24,8 @@ vmap <C-c> "+y
 hi Comment ctermfg=2
 
 " Copy Select Text to ClipBord
-" set clipboard+=autoselect
-" set clipboard+=unnamed
+set clipboard+=autoselect
+set clipboard+=unnamed
 
 " Settings for NeoBundle
 set nocompatible               " Be iMproved
