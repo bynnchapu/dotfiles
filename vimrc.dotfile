@@ -20,6 +20,9 @@ set laststatus=2
 nmap <Esc><Esc> :noh<CR><Esc>
 vmap <C-c> "+y
 
+" Config for vim-airline
+set t_Co=256
+
 " Color Settings
 hi Comment ctermfg=2
 
