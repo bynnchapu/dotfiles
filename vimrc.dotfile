@@ -23,6 +23,11 @@ vmap <C-c> "+y
 " Config for vim-airline
 set t_Co=256
 
+" Config for lightline
+let g:lightline = {
+      \ 'colorscheme': 'landscape'
+      \ }
+
 " Color Settings
 hi Comment ctermfg=2
 
