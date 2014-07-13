@@ -15,3 +15,10 @@ setw -g window-status-current-bg black
 unbind-key C-b
 set-option -g prefix C-e
 bind-key C-e send-prefix
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+
+# Bar Settings
+set -g status-right '[#H#]][%Y-%m-%d(%a) %H:%M]'
