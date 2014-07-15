@@ -20,13 +20,14 @@ set laststatus=2
 nmap <Esc><Esc> :noh<CR><Esc>
 vmap <C-c> "+y
 
-" Config for vim-airline
-set t_Co=256
-
 " Config for lightline
 let g:lightline = {
       \ 'colorscheme': 'landscape'
       \ }
+
+if !has('gui_running')
+  set t_Co=256
+endif
 
 " Color Settings
 hi Comment ctermfg=2
