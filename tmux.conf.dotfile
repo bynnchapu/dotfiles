@@ -19,6 +19,8 @@ setw -g window-status-current-bg black
 unbind-key C-b
 set-option -g prefix C-e
 bind-key C-e send-prefix
+bind s split-window -v
+bind v split-window -h
 bind h select-pane -L
 bind j select-pane -D
 bind k select-pane -U
@@ -27,6 +29,7 @@ bind H resize-pane -L 5
 bind J resize-pane -D 5
 bind K resize-pane -U 5
 bind L resize-pane -R 5
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
 
 # Bar Settings
 set-option -g status-right '#[fg=white,bg=black][%Y/%m/%d(%a)%H:%M]#[default]'
