@@ -5,7 +5,7 @@ Dotfiles for Noriki (a.k.a. Tencho)
 
 # zshrc
 
-When you use the .zshrc file, oh-my-zsh and zsh (ofcource) are required.
+When you use the zshrc.dotfile file, oh-my-zsh and zsh (ofcource) are required.
 
 Sample on Ubuntu 14.04 environment:
 
