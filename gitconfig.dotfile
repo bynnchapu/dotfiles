@@ -3,6 +3,7 @@
 	email = bynn_chapu@tencho-lab.net
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [push]
