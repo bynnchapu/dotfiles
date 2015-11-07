@@ -18,7 +18,9 @@ set laststatus=2
 
 " Key Settings
 nmap <Esc><Esc> :noh<CR><Esc>
-vmap <C-c> "+y
+
+" Clipboard Setting
+set clipboard=unnamedplus
 
 " Config for lightline
 let g:lightline = {
