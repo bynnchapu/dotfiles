@@ -1,0 +1,7 @@
+---
+- hosts: CentOS
+  remote_user: bynn_chapu
+  sudo: yes
+  tasks:
+    - name: Update packages
+      yum: name=* state=latest
