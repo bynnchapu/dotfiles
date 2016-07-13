@@ -7,7 +7,6 @@ set hlsearch
 set wrap
 set ruler
 set showcmd
-set mouse=a
 
 " Show Tabs
 set listchars=tab:>-,extends:<,trail:_
