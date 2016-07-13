@@ -6,7 +6,7 @@
     target_user: bynn_chapu
     home_dir: "/home/{{ target_user }}"
     dotfile_dir: "{{ home_dir }}/dotfiles"
-    neobundle_path: "{{ home_dir }}/.vim/bundle/neobundle.vim"
+    dein_path: "{{ home_dir }}/.vim/dein/repos/github.com/Shougo/"
     ohmyzsh_path: "{{ home_dir }}/.oh-my-zsh"
   tasks:
     - name: Disable SELinux
@@ -25,12 +25,12 @@
       git: repo=https://github.com/bynnchapu/dotfiles.git
            dest={{ dotfile_dir }}
       sudo: no
-    - name: Prepare to install NeoBundle
-      file: path={{ neobundle_path }} state=directory
+    - name: Prepare to install dein
+      file: path={{ dein_path }} state=directory
       sudo: no
     - name: Install NeoBundle
-      git: repo=https://github.com/Shougo/neobundle.vim
-           dest={{ neobundle_path }}
+      git: repo=https://github.com/Shougo/dein.vim
+           dest={{ dein_path }}
       sudo: no
     - name: Install OhMyZsh
       git: repo=https://github.com/robbyrussell/oh-my-zsh.git
