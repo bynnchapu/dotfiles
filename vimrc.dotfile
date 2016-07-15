@@ -35,7 +35,6 @@ hi Comment ctermfg=2
 
 " Copy Select Text to ClipBord
 set clipboard+=autoselect
-set clipboard+=unnamed
 
 " Settings for dein
 if &compatible
