@@ -45,6 +45,7 @@ set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.vim/dein'))
 call dein#add('tpope/vim-fugitive')
 call dein#add('itchyny/lightline.vim')
+call dein#add('scrooloose/nerdtree')
 call dein#end()
 
 filetype plugin indent on
