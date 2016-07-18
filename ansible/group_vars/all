@@ -1,0 +1,3 @@
+using_user: bynn_chapu
+users:
+  - { name: "{{using_user}}", password: "$1$mBj82lcI$ZgQbcC.MbkdHyvM5qv1Xu0", groups: "wheel"}

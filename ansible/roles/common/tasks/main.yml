@@ -1,0 +1,32 @@
+---
+- name: Disable SELinux
+  command: /sbin/setenforce 0
+  tags: system
+- name: Disable SELinux forever
+  command: /usr/bin/sed -i "s/\(^SELINUX=\).*/\1disabled/" /etc/selinux/config
+  tags: system
+- name: Update packages
+  yum: name=* state=latest
+  tags: packages
+- name: Create user.
+  user: name={{item.name}} state=present password={{item.password}} groups={{item.groups}}
+  with_items: users
+  tags: users
+- name: Create ~/.ssh directory.
+  file: path="/home/{{item.name}}/.ssh" state=directory owner={{item.name}} group={{item.name}} mode=0700
+  with_items: users
+  tags: users
+- name: Deploy authorized keys
+  get_url: url=https://github.com/bynnchapu.keys dest="/home/{{item.name}}/.ssh/authorized_keys" mode=0600
+  with_items: users
+  tags: users
+- name: Deploy sudores file
+  copy: src="sudoers" dest="/etc/sudoers" owner=root group=root mode=0440
+- name: Deploy ssh config
+  copy: src="sshd_config" dest="/etc/ssh/sshd_config" owner=root group=root mode=0600
+  notify:
+    - Restart sshd
+  tags: sshd
+- name: Enable and start sshd
+  service: name=sshd state=running enabled=yes
+  tags: sshd
