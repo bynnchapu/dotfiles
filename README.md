@@ -22,5 +22,3 @@ Sample on Ubuntu 18.04 environment:
     $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
     $ sh ./installer.sh ~/.cache/dein
     $ vim
-
-The vimrc.simple.dotfile is a vimrc file for not installed NeoBundle.
