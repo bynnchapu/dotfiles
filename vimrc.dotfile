@@ -7,6 +7,7 @@ set hlsearch
 set wrap
 set ruler
 set showcmd
+set belloff=all
 
 " Show Tabs
 set listchars=tab:>-,extends:<,trail:_
